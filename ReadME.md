@@ -71,3 +71,24 @@ docker-compose up –d
 ```
 
 + 若這邊輸入完指令跑出這樣的畫面
+
+![markdown-viewer](Image/9.png)
+
++ 打開Docker，進入設定，關閉Compose V2選項
+
+![markdown-viewer](Image/10.png)
+
++ 若沒有以上現象，可以註冊超級用戶帳號密碼使用Cvat了，輸入指令
+
+```
+
+winpty docker exec -it cvat_server bash -ic 'python3 ~/manage.py createsuperuser'
+
+```
+
++ 輸入你的帳號、密碼、Email
+
++ 接下來在網站上打上localhost:8080，輸入剛剛設定帳號、密碼就可以使用Cvat了!
+
+
+
